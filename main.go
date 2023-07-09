@@ -45,7 +45,7 @@ func main() {
 		jalali_date := fa_then.Format("yyyy-MM-dd")
 		jalali_dateـmonth_name := fa_then.Format("MMM")
 		jalali_persian_day := fa_then.Format("E")
-		jalali_persian_date_chars_full := fa_then.Format("yyyy MMM dd")
+		jalali_persian_date_year := fa_then.Format("yyyy")
 		season := ""
 		for k, months := range fasl_map {
 			for _, v := range months {
@@ -56,7 +56,7 @@ func main() {
 			}
 		}
 		// Write the row to the CSV file
-		row := []string{georgian_date, jalali_date, jalali_persian_date_chars_full, jalali_persian_day, jalali_dateـmonth_name, season}
+		row := []string{georgian_date, jalali_date, jalali_persian_date_year, jalali_persian_day, jalali_dateـmonth_name, season}
 		err = writer.Write(row)
 		if err != nil {
 			panic(err)
