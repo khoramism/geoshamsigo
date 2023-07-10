@@ -22,7 +22,7 @@ func main() {
 	writer := csv.NewWriter(file)
 	// Write the CSV header row
 	header := []string{"georgian_date", "jalali_date", "jalali_year_id", "jalali_month_id", "jalali_day_id", "day_of_week_id", "day_of_week", "month", "season", "season_id"}
-	
+
 	err = writer.Write(header)
 	if err != nil {
 		panic(err)
@@ -75,17 +75,17 @@ func main() {
 		}
 		// Write the row to the CSV file
 		row := []string{
-						georgian_date, 
-						jalali_date, 
-						jalali_persian_date_year, 
-						jalali_persian_month_id, 
-						jalali_normal_day_id, 
-						strconv.Itoa(jalali_persian_day_id), 
-						jalali_persian_day, 
-						jalali_dateـmonth_name, 
-						season, 
-						strconv.Itoa(jalali_persian_season_id)
-					}
+			georgian_date,
+			jalali_date,
+			jalali_persian_date_year,
+			jalali_persian_month_id,
+			jalali_normal_day_id,
+			strconv.Itoa(jalali_persian_day_id),
+			jalali_persian_day,
+			jalali_dateـmonth_name,
+			season,
+			strconv.Itoa(jalali_persian_season_id),
+		}
 		err = writer.Write(row)
 		if err != nil {
 			panic(err)

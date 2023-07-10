@@ -1,4 +1,4 @@
-georgian_date,jalali_date,jalali_persian_date_chars_full,jalali_day_name,jalali_month_name,season
+georgian_date,jalali_date,jalali_year_id,jalali_month_id,jalali_day_id,day_of_week_id,day_of_week,month,season,season_id
 1980-01-03,1358-10-13,1358,10,13,6,پنج‌شنبه,دی,زمستان,4
 1980-01-04,1358-10-14,1358,10,14,7,جمعه,دی,زمستان,4
 1980-01-05,1358-10-15,1358,10,15,1,شنبه,دی,زمستان,4
